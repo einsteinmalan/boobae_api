@@ -23,8 +23,8 @@ SET time_zone = "+00:00";
 --
 -- CREATE DATABASE IF NOT EXISTS `boobae` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 -- CREATE DATABASE IF NOT EXISTS `boobae` DEFAULT CHARSET = utf8mb4 DEFAULT COLLATE = utf8mb4_unicode_ci;
-CREATE DATABASE IF NOT EXISTS `boobae` DEFAULT CHARSET = utf8mb4 DEFAULT COLLATE = utf8mb4_general_ci;
-USE `boobae`;
+CREATE DATABASE IF NOT EXISTS `fred_boobae_api` DEFAULT CHARSET = utf8mb4 DEFAULT COLLATE = utf8mb4_general_ci;
+USE `fred_boobae_api`;
 
 -- --------------------------------------------------------
 

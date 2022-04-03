@@ -4,9 +4,9 @@ var util = require("util");
 var pool = mysql.createPool({
   connectionLimit: 10,
   host: "localhost",
-  user: "root",
-  password: "12345678",
-  database: "boobae",
+  user: "fred",
+  password: "b0ss@ka",
+  database: "fred_boobae_api",
   port: "3306"
   /*port: "3390"*/
 });
