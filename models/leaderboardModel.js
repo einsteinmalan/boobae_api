@@ -128,6 +128,7 @@ module.exports = {
                     "SELECT ? FROM leaderboards WHERE user_id = ?",
                 values: [field,user_id]
             });
+            if (result) console.log(`result: ${result.data}`);
             if (result) return result;
         } catch (err) {
             throw new Error(err);

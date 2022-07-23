@@ -30,7 +30,6 @@ const statusLeaderboard = require("../models/leaderboardModel");
 const mainService = require("../services/mainService");
 
 /* Schedule task   */
-/*
  cron.schedule('* * * * *', async function ()   {
   console.log('running a task every minute');
   var result = await statusLeaderboard.getAllLeaderboard();
@@ -50,9 +49,9 @@ const mainService = require("../services/mainService");
         var copper =value["copper_medal"] ;
         var gold = value["gold_medal"];
 
-       // console.log("silverPts :" + silver);
-       // console.log("copperPts :" + copper);
-       // console.log("goldPts :" + gold);
+        console.log("silverPts :" + silver);
+        console.log("copperPts :" + copper);
+        console.log("goldPts :" + gold);
 
         var totalPoint = (silver * 50) + (copper * 1) + (gold * 100);
        // console.log("Total Points calculated: "+totalPoint);
@@ -92,7 +91,6 @@ const mainService = require("../services/mainService");
 
 
 });
- */
 
 
 cron.schedule('* * * * *', async function ()   {
@@ -112,7 +110,7 @@ cron.schedule('* * * * *', async function ()   {
         var resp = res[0]["elapsed"];
        // console.log(`ELAPSED: ${res[0]["elapsed"]}`)
       console.log(`ELAPSED: ${resp}`)
-      if(resp > 2){  //change to 15
+      if(resp > 15){  //change to 15
         console.log(`removing ${username} PRO status`);
       var ops =  await userModel.updateRemovePro(user_id);
       console.log(`ops done! ${ops}`);
@@ -120,7 +118,6 @@ cron.schedule('* * * * *', async function ()   {
 
     } )
   }
-
 
 });
 

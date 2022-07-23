@@ -395,11 +395,11 @@ module.exports = {
         const copper = await statusLeaderboard.getMedal(user_id,`copper_medal`);
         const gold = await statusLeaderboard.getMedal(user_id,`gold_medal`);
 
-        console.log("Silver extracted :" + silver);
+        console.log("Silver extracted :" + `${silver}`);
 
         var silverPts = silver["data"]["silver_medal"];
-        var copperPts = silver["data"]["copper_medal"];
-        var goldPts = silver["data"]["gold_medal"];
+        var copperPts = copper["data"]["copper_medal"];
+        var goldPts = gold["data"]["gold_medal"];
 
         console.log("silverPts :" + silverPts);
         console.log("copperPts :" + copperPts);

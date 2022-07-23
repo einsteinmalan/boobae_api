@@ -19,3 +19,5 @@ jobs:
           /usr/bin/git pull
           /usr/local/bin/npm install
           /usr/local/bin/pm2 start boobae_api
+
+
